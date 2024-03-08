@@ -3,7 +3,6 @@ setlocal enabledelayedexpansion
 
 echo "######################"
 echo "## Git Deployer     ##"
-echo "## v 2.0            ##"
 echo "######################"
 
 set /p message= Mettre un message pour enregistrer le commit : 
@@ -21,6 +20,5 @@ if %errorlevel% neq 0 (
     git push github !branch!
 )
 
-echo "Connexion au serveur ..."
 :: Connexion SSH et exécution de deploy.sh
 ssh johkvfj@ssh.cluster030.hosting.ovh.net "cd /home/johkvfj/www/residence-senior/metz/preprod/wp-content/themes/twentytwentythree && . deployPREPROD.sh !branch!"

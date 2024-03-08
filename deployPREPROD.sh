@@ -3,7 +3,7 @@
 LIGHT_BLUE='\033[1;34m'
 LIGHT_GREEN='\033[1;32m'
 NC='\033[0m'
-
+echo -e "${LIGHT_BLUE}Connexion au serveur établie !${NC}"
 # Récupérer le nom de la branche passée en argument
 branch_name="$1"
 
