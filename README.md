@@ -14,6 +14,7 @@ Pour initialiser le programme veuillez suivre les étapes suivantes :
 6. Sur votre serveur, créer le remote pour connecter votre projet à Github : `git remote add github git@github.com:NOM-DE-VOTRE-REPO-GITHUB`.
 7. Créer votre clé SSH si ce n'est pas déjà fait afin que Github et le serveur puisse communiquer et s'authentifier.
 
+## Credits
 # Changlogs
 
 ## v2.1 - 08/03/2024
