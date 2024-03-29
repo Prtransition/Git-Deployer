@@ -21,4 +21,4 @@ if %errorlevel% neq 0 (
 )
 
 :: Connexion SSH et exécution de deploy.sh
-ssh johkvfj@ssh.cluster030.hosting.ovh.net "cd /home/johkvfj/www/residence-senior/metz/preprod/wp-content/themes/twentytwentythree && . deployPREPROD.sh !branch!"
+ssh johkvfj@ssh.cluster030.hosting.ovh.net "cd /home/johkvfj/www/residence-senior/metz/staging/web/app/themes && . deployStaging.sh !branch!"
