@@ -14,11 +14,11 @@ for /f "tokens=* delims=" %%i in ('git branch --show-current') do (
 git rev-parse --abbrev-ref --symbolic-full-name @{u} >nul 2>&1
 if %errorlevel% neq 0 (
     echo NOUVELLE BRANCHE
-    git push --set-upstream github !branch!
+    git push --set-upstream origin !branch!
     
 ) else (
-    git push github !branch!
+    git push origin !branch!
 )
 
 :: Connexion SSH et exécution de deploy.sh
-ssh johkvfj@ssh.cluster030.hosting.ovh.net "cd /home/johkvfj/www/residence-senior/metz/staging/web/app/themes && . deployStaging.sh !branch!"
+ssh johkvfj@ssh.cluster030.hosting.ovh.net "cd /home/johkvfj/www/residence-senior/metz/staging/web/app/themes/twentytwentyfour && . deployStaging.sh !branch!"

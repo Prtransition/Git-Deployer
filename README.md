@@ -30,6 +30,10 @@ Pour initialiser le programme veuillez suivre les étapes suivantes :
 - Modification nom dossier
 - Ajustement TUTO d'installation
 
+## v2.1.3 - 29/03/2024
+- Changement nom des remote en "origin" natif à Github
+- Ajout du dossier de destination
+
 ### Credits
 _Jean-Bastien TOSTI_<br>
 _Cyril PHILIPPART_
