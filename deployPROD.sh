@@ -13,6 +13,6 @@ if [ "$answer" != "yes" ]; then
     exit 0
 fi
 
-git pull github master
+git pull origin master
 echo -e "${LIGHT_GREEN}Done.${NC}"
 echo -e "${LIGHT_GREEN}Projet synchronisé et à jour.${NC}"

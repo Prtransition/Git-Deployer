@@ -8,6 +8,13 @@ echo "######################"
 set /p message= Mettre un message pour enregistrer le commit : 
 git add .
 git commit -m "!message!"
+
+set /p continue="Voulez-vous push ? (y/n) : "
+if /i "!continue!"=="n" (
+    echo Ok.
+    exit /b
+)
+
 for /f "tokens=* delims=" %%i in ('git branch --show-current') do (
     set branch=%%i
 )

@@ -10,9 +10,9 @@ Pour initialiser le programme veuillez suivre les étapes suivantes :
 2. Dans les fichier _deployStaging_ et _deployPROD_ modifier l'adresse de votre serveur et le chemin vers votre projet.
 3. Lancer la commande `git init` pour initialiser un depot
 4. Crée votre alias pour exécuter le stript : `git config --global alias.NOM-DE-VOTRE-COMMANDE '!C:/path/to/GIT-Deployer/deployStaging.bat'`.
-5. Créer le remote pour connecter votre projet local à Github : `git remote add github git@github.com:NOM-DE-VOTRE-REPO-GITHUB`
+5. Créer le remote pour connecter votre projet local à Github : `git remote add origin git@github.com:NOM-DE-VOTRE-REPO-GITHUB`
 6. Déplacer le fichier _deploy.sh_ sur votre serveur à la racine de votre projet.
-7. Sur votre serveur, lancer la commande `git init` et créer le remote pour connecter votre projet à Github : `git remote add github git@github.com:NOM-DE-VOTRE-REPO-GITHUB`.
+7. Sur votre serveur, lancer la commande `git init` et créer le remote pour connecter votre projet à Github : `git remote add origin git@github.com:NOM-DE-VOTRE-REPO-GITHUB`.
 8. Créer votre clé SSH si ce n'est pas déjà fait afin que Github et le serveur puisse communiquer et s'authentifier.
 
 # Changlogs
@@ -29,6 +29,13 @@ Pour initialiser le programme veuillez suivre les étapes suivantes :
 ## v2.1.2 - 29/03/2024
 - Modification nom dossier
 - Ajustement TUTO d'installation
+
+## v2.1.3 - 14/04/2024
+- Changement nom des remote en "origin" natif à Github
+- Ajout du dossier de destination
+
+## v2.1.4 - 16/04/2024
+- Demande de validation du push en Staging apres commit
 
 ### Credits
 _Jean-Bastien TOSTI_<br>

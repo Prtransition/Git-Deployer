@@ -30,7 +30,7 @@ else
 fi
 
 # Effectuer un git pull depuis la branche distante
-git pull github "$branch_name"
+git pull origin "$branch_name"
 echo -e "${LIGHT_GREEN}Done.${NC}"
 echo -e "${LIGHT_GREEN}Projet synchronisé et à jour.${NC}"
 
