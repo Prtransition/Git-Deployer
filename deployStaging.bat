@@ -28,4 +28,4 @@ if /i "!continue!"=="n" (
 )
 
 :: Connexion SSH et exécution de deploy.sh
-ssh seniortr@ssh.cluster006.hosting.ovh.net "cd /homez.726/seniortr/www/staging/web/app/themes/seniortransition && . deployStaging.sh !branch!"
+ssh seniortr@ssh.cluster006.hosting.ovh.net "cd /homez.726/seniortr/staging/web/app/themes/seniortransition && . deployStaging.sh !branch!"
