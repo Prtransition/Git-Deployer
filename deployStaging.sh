@@ -8,7 +8,7 @@ echo -e "${LIGHT_BLUE}Connexion au serveur établie !${NC}"
 branch_name="$1"
 
 # Récupérer le nom de la branche actuelle sur le serveur
-current_branch=$(git rev-parse --abbrev-ref HEAD)
+current_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "")
 
 # Récupérer la liste des branches distantes
 git fetch --prune --quiet
@@ -25,12 +25,10 @@ if echo "$remote_branches" | grep -q "/$branch_name$"; then
 else
     echo -e "${LIGHT_BLUE}NOUVELLE BRANCHE sur le serveur distant détéctée.${NC}"
     echo -e "${LIGHT_BLUE}Création de la branche $branch_name ...${NC}"
-    git branch "$branch_name"
-    git checkout "$branch_name"
+    git checkout -b "$branch_name"
 fi
 
 # Effectuer un git pull depuis la branche distante
 git pull origin "$branch_name"
 echo -e "${LIGHT_GREEN}Done.${NC}"
 echo -e "${LIGHT_GREEN}Projet synchronisé et à jour.${NC}"
-

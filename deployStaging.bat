@@ -28,4 +28,4 @@ if /i "!continue!"=="n" (
 )
 
 :: Connexion SSH et exécution de deploy.sh
-ssh johkvfj@ssh.cluster030.hosting.ovh.net "cd /home/johkvfj/www/residence-senior/metz/staging/web/app/themes/twentytwentyfour && . deployStaging.sh !branch!"
+ssh piol4306@109.234.166.16 "cd /home/piol4306/staging/web/app/themes/seniortransition && . deployStaging.sh !branch!"
